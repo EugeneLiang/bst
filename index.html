@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>BST by SimonPadbury</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>BST</h1>
+          <h2>A Bootstrap 3 Starter Theme, for WordPress</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/SimonPadbury/bst/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/SimonPadbury/bst/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/SimonPadbury/bst" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <p><strong>BST is a (very) simple WordPress starter theme loaded with Bootstrap 3.</strong></p>
+
+<p><em>Version 1.5</em></p>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li><em>Simple, intuitive, clean code.</em></li>
+<li>CSS, JS, functions and template parts in different folders.</li>
+<li>
+<strong>Bootstrap 3.2.0</strong> - CSS and JS enqueued. You can simply swap the default Bootstrap 3 files (included) for a custom made Bootstrap 3, and this theme will still work.</li>
+<li>
+<strong>jQuery 1.11.1</strong> called from Google CDN, with a local fallback when offline.</li>
+<li>
+<strong>NEW: WooCommerce</strong> plugin support.</li>
+<li>
+<strong>NEW:</strong> Choice of two navbar positions (top of screen and/or below site title). Simply delete what you don't need.</li>
+<li>A starter CSS theme - <code>bst.css</code>, enqueued.</li>
+<li>Visual editor stylesheet - into which the same Bootsrap 3 and starter CSS theme are preloaded by <code>@import</code>, so that <strong>WYSI(M!)WYG</strong> - what you see in the visual editor is (mostly!) what you get at the front end.</li>
+<li>
+<code>Modernizr.js</code>, <code>respond.js</code> and <code>html5shiv.css</code> included - enqueued.</li>
+<li>Clean-up scripts in place - for helping web design newbies find their way around the HTML outputted by WordPress. (Do not rely on these for security.)</li>
+<li>A few simple jQuery scripts - in <code>bst.js</code>, enqueued. Example: <strong>Hovernav</strong> (see below).</li>
+<li>Custom comment list callback.</li>
+<li>Easily make this theme your own - if you rename <code>bst.css</code> to <code>yourtheme.css</code>, and <code>bst.js</code> to <code>yourtheme.js</code>, and then do a global search-and-replace to rename "bst" to "yourtheme" everywhere in the theme's code, this theme will still work. (You must also modify the comments in <code>style.css</code>, and rename the root folder from <strong>bst/</strong> to <strong>yourtheme/</strong>.)</li>
+<li>
+<a href="http://opensource.org/licenses/MIT">MIT licence</a> (open source).</li>
+</ul><p>This theme has been built for use as a starter theme and as a learning aid for people who wish to get into WordPress theme design.</p>
+
+<h3>
+<a name="hovernav" class="anchor" href="#hovernav"><span class="octicon octicon-link"></span></a>Hovernav</h3>
+
+<p>The navbar has some modifications that make the dropdown menu appear on hover (in <code>bst.js</code> plus <code>bst.css</code>). <em>The Bootstrap js and css have not been changed</em>. You can easily delete the "hovernav" segments of bst.js and bst.css if you don't want them. </p>
+
+<h2>
+<a name="notes-on-woocommerce-support" class="anchor" href="#notes-on-woocommerce-support"><span class="octicon octicon-link"></span></a>Notes on WooCommerce support</h2>
+
+<ul>
+<li>You will need to install the WooCommerce plugin - <a href="http://wordpress.org/plugins/woocommerce/">http://wordpress.org/plugins/woocommerce/</a>
+</li>
+<li>I have included the <em>minimum</em> additions to BST to make WooCommerce work (this is a starter theme). It will work fine with these minimum additions, but you can add more style and improve the layout.</li>
+<li>WooCommerce uses WooCommerce-styled buttons, icons, etc. in its shop, cart, checkout etc. - these are not the same as the Bootstrap buttons, icons etc. I have not replaced the WooCommerce buttons with Bootstrap buttons, because that would mean that you have no control over the appearance of these buttons from within the WooCommerce plugin settings.</li>
+<li>However I have applied Bootstrap styling to the cart and checkout forms, using jQuery insertion of Bootstrap CSS classes.</li>
+<li>You will need to add a "Shop" link, e.g. to your primary menu</li>
+<li>You will need to add some WooCommerce Widgets to the sidebar (at minimum, WooCommerce Cart and WooCommerce Categories)</li>
+<li>And, of course, you will need to add salable items to your shop, and set up your payment gateway.</li>
+</ul><p>Find out more about WooCommerce here: <a href="http://www.woothemes.com/woocommerce/">http://www.woothemes.com/woocommerce/</a></p>
+
+<h3>
+<a name="what-if-you-dont-want-woocommerce-support-in-bst" class="anchor" href="#what-if-you-dont-want-woocommerce-support-in-bst"><span class="octicon octicon-link"></span></a>What if you don't want WooCommerce support in BST?</h3>
+
+<p>Simply delete or remove these things that you won't be needing:</p>
+
+<ul>
+<li>
+<strong>Remove:</strong> woocommerce.php .</li>
+<li>
+<strong>Remove:</strong> /func/woocommerce-setup.php .</li>
+<li>
+<strong>Delete:</strong> in /func/setup.php, scroll to the bottom and delete the line
+<code>add_theme_support('woocommerce');</code>
+</li>
+<li>
+<strong>Delete:</strong> in /css/bst.css, scroll to the bottom and delete all the <code>.woocommerce</code> styles.</li>
+<li>
+<strong>Delete:</strong> in /js/bst.css, scroll to the bottom and delete all that has to do with WooCommerce.</li>
+</ul>
+        </section>
+
+        <footer>
+          BST is maintained by <a href="https://github.com/SimonPadbury">SimonPadbury</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
